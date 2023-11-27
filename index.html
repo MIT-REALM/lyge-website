@@ -206,6 +206,11 @@
         <div class="content has-text-justified">
           <div>
             <b>CartPole Environment:</b>
+            <ul>
+              <li>LYGE can stabilize the system closest to the goal.</li>
+              <li>PPO can stabilize the system a bit farther from the goal.</li>
+              <li>AIRL, D-REX, and SSRR stabilize the system farther from the goal.</li>
+            </ul>
           </div>
           <div>
             <center>
@@ -247,8 +252,15 @@
               </figure>
             </center>
           </div>
-          <div style="margin-top: 10px"> 
+          <div style="margin-top: 20px"> 
             <b>CartIIPole Environment:</b>
+            <ul>
+              <li>LYGE can stabilize the system.</li>
+              <li>PPO can also stabilize the system.</li>
+              <li>AIRL recovers the bad behavior of the demonstrations.</li>
+              <li>D-REX stabilizes the system at the wrong state.</li>
+              <li>SSRR cannot stabilize the system.</li>
+            </ul>
           </div>
           <div>
             <center>
@@ -290,8 +302,14 @@
               </figure>
             </center>
           </div>
-          <div style="margin-top: 10px"> 
+          <div style="margin-top: 20px"> 
             <b>F-16GCA Environment:</b>
+            <ul>
+              <li>LYGE pulls up F-16 fast and stabilizes it at the desired altitude.</li>
+              <li>PPO makes dangerous behaviors, and sometimes collides with the ground.</li>
+              <li>AIRL and D-REX sometimes collide with the ground.</li>
+              <li>SSRR also makes dangerous behaviors.</li>
+            </ul>
           </div>
           <div>
             <center>
@@ -333,8 +351,13 @@
               </figure>
             </center>
           </div>
-          <div style="margin-top: 10px"> 
+          <div style="margin-top: 20px"> 
             <b>F-16Tracking Environment:</b>
+            <ul>
+              <li>LYGE tracks the goal point well.</li>
+              <li>PPO and SSRR make the F-16 spins, which is a dangerous behavior.</li>
+              <li>AIRL and D-REX cannot reach the goal.</li>
+            </ul>
           </div>
           <div>
             <center>
